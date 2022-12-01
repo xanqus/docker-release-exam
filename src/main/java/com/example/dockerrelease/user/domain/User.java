@@ -1,22 +1,26 @@
-package com.example.dockerrelease.domain;
+package com.example.dockerrelease.user.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Getter
 @Setter
-public class Article {
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
+    private String username;
 
-    private String contents;
+    private String email;
+
+    private String password;
 }

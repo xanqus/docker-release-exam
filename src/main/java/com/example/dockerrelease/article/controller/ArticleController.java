@@ -1,7 +1,7 @@
-package com.example.dockerrelease.controller;
+package com.example.dockerrelease.article.controller;
 
-import com.example.dockerrelease.dao.ArticleRepository;
-import com.example.dockerrelease.domain.Article;
+import com.example.dockerrelease.article.dao.ArticleRepository;
+import com.example.dockerrelease.article.domain.Article;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
